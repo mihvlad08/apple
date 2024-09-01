@@ -20,7 +20,7 @@ app.use(express.json());
 // Function to insert data into PostgreSQL
 const insertData = async (param1, param2, param3) => {
   const query =
-    "INSERT INTO your_table_name (column1, column2, column3) VALUES ($1, $2, $3)";
+    "INSERT INTO your_table_name_2 (column1, column2, column3) VALUES ($1, $2, $3)";
   const values = [param1, param2, param3];
   try {
     await pool.query(query, values);
