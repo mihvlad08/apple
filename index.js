@@ -12,6 +12,9 @@ const pool = new Pool({
   database: "apple_wsqw",
   password: "JNzFPHq1qzxOCQ7hfw2IYmoAv52Qqr4y",
   port: 5432,
+  ssl: {
+    rejectUnauthorized: false, // Disable SSL certificate verification
+  },
 });
 
 // Middleware to parse JSON bodies
