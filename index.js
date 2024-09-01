@@ -8,7 +8,7 @@ const port = 3000;
 // PostgreSQL client setup
 const pool = new Pool({
   user: "apple",
-  host: "postgresql://apple:JNzFPHq1qzxOCQ7hfw2IYmoAv52Qqr4y@dpg-cra94i23esus739sd0jg-a.frankfurt-postgres.render.com/apple_wsqw",
+  host: "jdbc:postgresql://dpg-cra94i23esus739sd0jg-a.frankfurt-postgres.render.com:5432/apple_wsqw?user=apple&password=JNzFPHq1qzxOCQ7hfw2IYmoAv52Qqr4y",
   database: "apple_wsqw",
   password: "JNzFPHq1qzxOCQ7hfw2IYmoAv52Qqr4y",
   port: 5432,
